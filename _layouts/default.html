@@ -1,28 +1,13 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:joshpabraham@gmail.com">e-mail</a></li>
-	        		<li><a href="https://github.com/joshpabraham">github</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<html lang="en">
+  {% include head.html %}
+  <body>
+      {% include header.html %}
+      <section id="about">
+        {% include about.html %}
+      </section>
+        {{ content }}
+      {% include footer.html %}
+  </body>
+</html>
